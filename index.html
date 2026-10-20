@@ -1,36 +1,160 @@
-<html>
+<html 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repositorio - Joel Rodriguez Ortiz</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #071426, #102d50, #164e75);
+            color: white;
+            overflow: hidden;
+        }
+
+        .portada {
+            width: 85%;
+            max-width: 900px;
+            padding: 70px 30px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            background: rgba(255, 255, 255, 0.07);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(12px);
+            animation: aparecer 1.2s ease;
+        }
+
+        .icono {
+            font-size: 65px;
+            margin-bottom: 25px;
+        }
+
+        .etiqueta {
+            color: #5ee7ff;
+            font-size: 14px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(30px, 6vw, 55px);
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            line-height: 1.2;
+        }
+
+        h1 span {
+            color: #5ee7ff;
+        }
+
+        .linea {
+            width: 100px;
+            height: 4px;
+            background: #5ee7ff;
+            margin: 25px auto;
+            border-radius: 5px;
+        }
+
+        .curso {
+            font-size: 27px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            margin-bottom: 25px;
+        }
+
+        .descripcion {
+            color: #c5d7e8;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .enlaces {
+            color: #c5d7e8;
+            font-size: 16px;
+            line-height: 1.7;
+            padding: 25px 10px;
+            padding-bottom: 5px;
+        }
+
+        footer {
+            margin-top: 45px;
+            font-size: 12px;
+            letter-spacing: 3px;
+            color: #8baac4;
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .portada {
+                width: 92%;
+                padding: 45px 20px;
+            }
+
+            .curso {
+                font-size: 22px;
+            }
+
+            .etiqueta {
+                letter-spacing: 3px;
+            }
+        }
+    </style>
+</head>
 
 <body>
 
-<h3><b>Hello world!</b></h3><br/>
-<p><h1>Repositorio Digitalización // Joel Rodriguez 2026</h1></p>
+<main class="portada">
+    <div class="icono">📘</div>
 
-<p><h2>Índice:</h2></p>
+    <p class="etiqueta">Repositorio DAM</p>
 
-<ol>
-  <li>Formatos de texto.
-  <li>Meter y progress.</li>
-  <li>Enlaces.</li>
-</ol> 
-  <p><h3>1. Formatos de texto:</h3></p>
-  <p><h4><b>-Texto en negrita.</b></h4></p>
-  <h4><i>-Texto en cursiva.</i></h4>
+    <h1>
+        Joel Rodriguez<br>
+    </h1>
 
-  <p><h3>2. Meter y progress:</h3></p>
-<label for="disk_c">Uso de disco C:</label>
-<meter id="disk_c" value = "1" min="0" max="10">2 de 10</meter><br>
-<label for="disk_d">Uso de disco D:</label>
-<meter id="disk_d" value = "0.45">60%</meter>
+    <div class="linea"></div>
 
-  <p><h3>3. Enlaces:</h3></p>
-  <nav>
-    <a href="https://joelrodriguezortiz.github.io/Digi2026/CV_RodriguezJoel.html.html">Curriculum</a><br>
-    <a href="https://on1ntza.github.io/digi2026">Otros repositorios</a><br>
-  </nav>
-  
+    <p class="curso">2026 - 2027</p>
+
+    <p class="descripcion">
+        Recopilación de trabajos, proyectos y actividades
+        realizados durante el curso académico.
+    </p>
+
+    <p class="enlaces">Enlaces:</p>
+    <nav>
+        <a href="https://joelrodriguezortiz.github.io/Digi2026/CV_RodriguezJoel.html.html" style="color: skyblue;">Leguaje de Marcas</a><br>
+        <a href="https://joelrodriguezortiz.github.io/Digi2026/CV_RodriguezJoel.html.html" style="color: skyblue;">Digitalización</a><br>
+        <a href="https://on1ntza.github.io/digi2026" style="color: skyblue;">Otros repositorios</a><br>
+    </nav>
+
+    <footer>
+        PORTAFOLIO ACADÉMICO
+    </footer>
+</main>
+
 </body>
-  
-</head>
-  
 </html>
