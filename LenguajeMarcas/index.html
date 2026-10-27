@@ -1,1 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #071426, #102d50, #164e75);
+            color: white;
+            overflow: hidden;
+        }
+
+        .portada {
+            width: 85%;
+            max-width: 900px;
+            padding: 70px 30px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            background: rgba(255, 255, 255, 0.07);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(12px);
+            animation: aparecer 1.2s ease;
+        }
+
+        .icono {
+            font-size: 65px;
+            margin-bottom: 25px;
+        }
+
+        .etiqueta {
+            color: #5ee7ff;
+            font-size: 14px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(30px, 6vw, 55px);
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            line-height: 1.2;
+        }
+
+        h1 span {
+            color: #5ee7ff;
+        }
+
+        .linea {
+            width: 100px;
+            height: 4px;
+            background: #5ee7ff;
+            margin: 25px auto;
+            border-radius: 5px;
+        }
+
+        .curso {
+            font-size: 27px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            margin-bottom: 25px;
+        }
+
+        .descripcion {
+            color: #c5d7e8;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .enlaces {
+            color: #c5d7e8;
+            font-size: 16px;
+            line-height: 1.7;
+            padding: 25px 10px;
+            padding-bottom: 5px;
+        }
+
+        footer {
+            margin-top: 45px;
+            font-size: 12px;
+            letter-spacing: 3px;
+            color: #8baac4;
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .portada {
+                width: 92%;
+                padding: 45px 20px;
+            }
+
+            .curso {
+                font-size: 22px;
+            }
+
+            .etiqueta {
+                letter-spacing: 3px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<main class="portada">
+
+    <div class="icono">💻</div>
+
+    <h1>
+        Lenguaje de Marcas
+    </h1>
+
+    <div class="linea"></div>
+
+    <p class="curso"> 2026 - 2027</p>
+
+    <p class="enlaces">Enlaces:</p>
+    <nav>
+        <a href="https://joelrodriguezortiz.github.io/Digi2026/CV_RodriguezJoel.html.html" style="color: skyblue;">Digitalización</a><br>
+        <a href="https://on1ntza.github.io/digi2026" style="color: skyblue;">Otros repositorios</a><br>
+    </nav>
+
+</main>
+
+</body>
+</html>
