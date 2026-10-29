@@ -4,7 +4,56 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
+ <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #071426, #102d50, #164e75);
+            color: white;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: clamp(30px, 6vw, 55px);
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            line-height: 1.2;
+        }
+
+        h1 span {
+            color: #5ee7ff;
+        }
+
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .portada {
+                width: 92%;
+                padding: 45px 20px;
+            }
+
+        }
+    </style>
 
 </head>
 <body>
