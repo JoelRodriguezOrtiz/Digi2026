@@ -1,1 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
 
+
+
+</head>
+<body>
+
+<form method="get" action="#">
+
+    <img src="Imagenes/Imagen_1_Examen.png" alt="Descripción" height="75" width="120"/><br>
+    <label for ="codigo">Introduzca el código de la imagen:</label>
+    <input type="text" name="codigo" id="codigo"/>
+    <input type="submit" value="Enviar"/>
+
+</form>
+
+</body>
+</html>
