@@ -1,1 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario7</title>
+</head>
+<body>
 
+<form method="get" action="http://localhost:51264/Formulario2.aspx">
+
+    <label for="con">Selecciona un continente</label>
+        <select id="con" name = "Cont">
+            <option>Africa</option>
+            <option>Europa</option>
+            <option>América</option>
+        </select><br>
+
+    <label for = "fI">Fecha Inicio: <input type="date" id="fI" name="inicio"></label><br>
+    <label for = "fF">Fecha Fin: <input type="date" id="fF" name="fin"></label><br>
+
+    <input type="submit" value="Viajar"/>
+
+</form>
+
+</body>
+</html>
